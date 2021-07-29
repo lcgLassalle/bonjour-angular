@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bonjour-angular';
-  unObjetFourni= new Collegue("001","Mystère","Martin","martinMystère@agent.com","1991/02/21","img/martinmystere.png");
 }

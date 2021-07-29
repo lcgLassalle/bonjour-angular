@@ -3,10 +3,10 @@ export class Collegue {
   nom:string;
   prenoms:string;
   email:string;
-  dateNaissance:string;
+  dateNaissance:Date;
   photoUrl:string;
 
-  constructor(matricule:string, nom:string, prenom:string, email:string, dateNaissance:string, photoUrl:string){
+  constructor(matricule:string, nom:string, prenom:string, email:string, dateNaissance:Date, photoUrl:string){
     this.matricule=matricule;
     this.nom=nom;
     this.prenoms=prenom;

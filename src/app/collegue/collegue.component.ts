@@ -1,5 +1,6 @@
 import { Collegue } from './../models/Collegue';
 import { Component, OnInit, Input } from '@angular/core';
+import { CollegueMock } from '../mock/collegue.mock';
 
 @Component({
   selector: 'app-collegue',
@@ -12,6 +13,7 @@ export class CollegueComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    this.col =new CollegueMock().col;
   }
 
   creationCollegue() {
