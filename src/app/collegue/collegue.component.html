@@ -1,0 +1,31 @@
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Fiche Collègue</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ col.photoUrl }}</td>
+        <td>
+          <ul>
+            <li>Matricule: {{ col.matricule }}</li>
+            <li>Nom: {{ col.nom }}</li>
+            <li>Prénoms: {{ col.prenoms }}</li>
+            <li>Date de Naissance: {{ col.dateNaissance }}</li>
+            <li>email: {{ col.email }}</li>
+            <li>
+              <button (click)="modifierCollegue()" type="button" class="btn btn-primary">
+                Modifier fiche
+              </button>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="container">
+    <a href="" (click)="creationCollegue()">Création d'un nouveau collègue</a>
+  </div>
+</div>
